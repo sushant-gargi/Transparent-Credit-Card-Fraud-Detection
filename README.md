@@ -1,14 +1,14 @@
-# Transparent Credit Card Fraud Detection
+# 🧠 Transparent Credit Card Fraud Detection
 
 **An Interpretable Deep Learning Framework using LTACNN and Kolmogorov–Arnold Networks**
 
-📌 Overview
+## 📌 Overview
 
 Credit card fraud detection demands **high accuracy** while maintaining **model transparency**, especially in financial and regulatory environments. While deep learning models excel at capturing complex transaction patterns, they often act as *black boxes*, limiting trust and explainability.
 
 This project proposes a **novel transparent fraud detection framework** that combines a high-performance **Linear Time Attention CNN-LSTM (LTACNN)** model with an inherently interpretable **Kolmogorov–Arnold Network (KAN)**. The result is a system that delivers **robust fraud detection performance** while offering **clear mathematical explanations** for its decisions.
 
-🎯 Objectives
+## 🎯 Objectives
 
 * Develop a hybrid **LTACNN-KAN framework** for credit card fraud detection
 * Achieve high classification performance on imbalanced transaction data
@@ -16,15 +16,15 @@ This project proposes a **novel transparent fraud detection framework** that com
 * Compare deep learning and KAN-based approaches using standard evaluation metrics
 * Validate explanation consistency using **SHAP** and **LIME** techniques
 
-🧩 Methodology
+## 🧩 Methodology
 
-🔹 Data Preprocessing
+### 🔹 Data Preprocessing
 
 * **Imbalance Handling:** Adaptive Synthetic Sampling (ADASYN)
 * **Feature Scaling:** RobustScaler to reduce outlier influence
 * **Data Transformation:** Converted into PyTorch tensors for deep learning compatibility
 
-🔹 Model Architecture
+### 🔹 Model Architecture
 
 * **LTACNN Model**
 
@@ -45,8 +45,6 @@ This project proposes a **novel transparent fraud detection framework** that com
 * Framework: PyTorch
 * Hardware: GPU-accelerated training
 
----
-
 ## 📊 Evaluation Metrics
 
 Models are evaluated using:
@@ -59,8 +57,6 @@ Models are evaluated using:
 
 Statistical comparison is performed using the **Wilcoxon signed-rank test** to assess significance between models.
 
----
-
 ## 📈 Results
 
 | Model                   | Accuracy | Precision | Recall |
@@ -72,15 +68,11 @@ Statistical comparison is performed using the **Wilcoxon signed-rank test** to a
 ✔ Faster convergence and stable learning observed in KAN
 ✔ Key fraud-related features consistently identified across models
 
----
-
 ## 🔍 Explainability & Transparency
 
 * **SHAP & LIME** used to analyze feature contributions
 * KAN produces **explicit mathematical functions** instead of opaque activations
 * Ensures interpretability suitable for **financial auditing and compliance**
-
----
 
 ## 🏗️ Project Structure
 
@@ -104,8 +96,6 @@ Statistical comparison is performed using the **Wilcoxon signed-rank test** to a
 └── README.md
 ```
 
----
-
 ## 🛠️ Tech Stack
 
 * **Python**
@@ -115,8 +105,6 @@ Statistical comparison is performed using the **Wilcoxon signed-rank test** to a
 * **pykan**
 * **SHAP & LIME**
 * **Matplotlib / Seaborn**
-
----
 
 ## 🚀 How to Run
 
@@ -134,25 +122,17 @@ python training/train_kan.py
 python evaluation/metrics.py
 ```
 
----
-
 ## 🧪 Dataset
 
 * Public credit card transaction dataset
 * Highly imbalanced fraud vs non-fraud classes
 * Preprocessed using ADASYN and robust scaling
 
-*(Dataset source details can be added if publicly shareable)*
-
----
-
 ## 📚 References
 
 * Kolmogorov–Arnold Networks (KANs)
 * Explainable AI (XAI) methods: SHAP, LIME
 * Deep learning approaches for financial fraud detection
-
----
 
 ## 👨‍💻 Authors
 
@@ -162,22 +142,9 @@ python evaluation/metrics.py
 School of Computer Science and Engineering
 Vellore Institute of Technology, Chennai
 
----
-
 ## ⭐ Why This Project Stands Out
 
 ✔ Combines **accuracy + interpretability**
 ✔ Suitable for **real-world financial systems**
 ✔ Strong research orientation
 ✔ Recruiter-friendly & publication-ready
-
----
-
-If you want, I can also:
-
-* Optimize this README for **research paper GitHub submission**
-* Add **badges** (PyTorch, Python version, license)
-* Create a **short README version** for recruiters
-* Write a **perfect repo description + GitHub About section**
-
-Just tell me 🔥
